@@ -56,10 +56,8 @@ git chore release-vx.y.z
 # 3. Use irish-pub to check the package content. Install with `npm install -g` first.
 irish-pub
 # 4. Update the [CHANGELOG](CHANGELOG.md) for the upcoming release.
-# 5. Update the README with the right install command. Use the next command to find out what those are.
-npm info eslint-plugin-springload@latest peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g'
-# 6. Create a PR and merge it.
-# 7. On master,
+# 5. Create a PR and merge it.
+# 6. On master,
 npm publish
-# 8. Finally, go to GitHub and create a release and a tag for the new version.
+# 7. Finally, go to GitHub and create a release and a tag for the new version.
 ```
