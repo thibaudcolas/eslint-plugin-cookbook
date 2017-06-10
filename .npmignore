@@ -3,7 +3,6 @@ server
 .babelrc
 examples
 docs
-lib
 .npmignore
 webpack.config.prod.js
 webpack.config.dev.js
@@ -15,3 +14,5 @@ webpack.config.dev.js
 .githooks
 bin
 .env
+LICENSE
+*.test.js
