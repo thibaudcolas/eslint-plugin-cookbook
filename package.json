@@ -37,8 +37,11 @@
     "eslint": ">= 3"
   },
   "scripts": {
-    "lint": "eslint .",
-    "test": "node lib/index.test.js",
-    "test:ci": "npm run lint -s && npm run test -s"
+    "lint": "eslint lib",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:ci": "npm run lint -s && npm run test:coverage -s",
+    "report:coverage": "open coverage/lcov-report/index.html"
   }
 }
