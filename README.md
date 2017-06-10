@@ -2,6 +2,12 @@
 
 > Springload's ESLint shareable configurations, as a plugin.
 
+## Why
+
+We want shareable configs to have as low of an overhead as possible. Users shouldn't have to know exactly what plugins are required by the config, install them and manage their versions manually. This plugin exposes [`eslint-config-springload`](https://github.com/springload/eslint-config-springload) for reuse, with plugins automatically installed.
+
+> See [https://github.com/eslint/eslint/issues/3458](https://github.com/eslint/eslint/issues/3458) for further discussion on this topic. Approach inspired by [`eslint-plugin-react-app`](https://github.com/mmazzarolo/eslint-plugin-react-app).
+
 ## Usage
 
 Install the config and its dependencies:
@@ -20,7 +26,19 @@ Configure ESLint to use this config. For example, in your package.json, this wou
 
 ### Configuring the rules
 
-### Included plugins
+This is a drop-in configuration for Springload projects. Should further customisation be required, rules coming from external plugins require the `springload` prefix:
+
+```diff
+{
+  "extends": "plugin:springload/recommended"
+  "rules": {
+-    "react/react-in-jsx-scope": ["warn"],
++    "springload/react/react-in-jsx-scope": ["warn"],
+-    "import/prefer-default-export": ["warn"],
++    "springload/import/prefer-default-export": ["warn"],
+  }
+}
+```
 
 ## Development
 
