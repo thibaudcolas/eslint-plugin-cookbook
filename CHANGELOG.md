@@ -6,6 +6,16 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## Unreleased
 
+## [[v1.0.1]](https://github.com/springload/eslint-plugin-springload/releases/tag/v1.0.1)
+
+### Fixed
+
+- Add missing `extends` prop to reuse rules from `eslint-config-airbnb`.
+
+### Changed
+
+- Remove LICENSE file to make installed package smaller.
+
 ## [[v1.0.0]](https://github.com/springload/eslint-plugin-springload/releases/tag/v1.0.0)
 
 First usable release!
