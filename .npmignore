@@ -14,5 +14,4 @@ webpack.config.dev.js
 .githooks
 bin
 .env
-LICENSE
 *.test.js
