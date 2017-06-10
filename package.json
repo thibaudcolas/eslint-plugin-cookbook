@@ -37,7 +37,8 @@
     "eslint": ">= 3"
   },
   "scripts": {
-    "lint": "eslint lib",
+    "linter:js": "eslint",
+    "lint": "npm run linter:js -- lib",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
