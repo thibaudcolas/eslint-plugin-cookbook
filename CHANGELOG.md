@@ -6,6 +6,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## Unreleased
 
+## [[v1.0.2]](https://github.com/springload/eslint-plugin-springload/releases/tag/v1.0.2)
+
+### Fixed
+
+- Replace extends with config computed from nested extends with CLIEngine (#1).
+
 ## [[v1.0.1]](https://github.com/springload/eslint-plugin-springload/releases/tag/v1.0.1)
 
 ### Fixed

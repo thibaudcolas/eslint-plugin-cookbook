@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-springload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Springload's ESLint shareable configurations as a plugin",
   "license": "MIT",
   "author": "Springload",
