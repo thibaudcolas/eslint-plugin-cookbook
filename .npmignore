@@ -15,3 +15,5 @@ webpack.config.dev.js
 bin
 .env
 *.test.js
+.vscode
+buildConfig.js
