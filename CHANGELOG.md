@@ -6,6 +6,19 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## Unreleased
 
+## [[v2.0.1]](https://github.com/springload/eslint-plugin-springload/releases/tag/v2.0.1)
+
+### Changed
+
+- Fix missing plugin.
+
+## [[v2.0.0]](https://github.com/springload/eslint-plugin-springload/releases/tag/v2.0.0)
+
+### Changed
+
+- Update all dependencies to eslint-config-springload 2 beta.
+- Compute ESLint config at build time instead of runtime.
+
 ## [[v1.0.2]](https://github.com/springload/eslint-plugin-springload/releases/tag/v1.0.2)
 
 ### Fixed
