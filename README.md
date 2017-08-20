@@ -1,4 +1,4 @@
-# eslint-plugin-springload [![npm](https://img.shields.io/npm/v/eslint-plugin-springload.svg?style=flat-square)](https://www.npmjs.com/package/eslint-plugin-springload) [![Build Status](https://travis-ci.org/springload/eslint-plugin-springload.svg?branch=master)](https://travis-ci.org/springload/eslint-plugin-springload) [![Greenkeeper badge](https://badges.greenkeeper.io/springload/eslint-plugin-springload.svg)](https://greenkeeper.io/)
+# eslint-plugin-springload [![npm](https://img.shields.io/npm/v/eslint-plugin-springload.svg?style=flat-square)](https://www.npmjs.com/package/eslint-plugin-springload) [![Build Status](https://travis-ci.org/springload/eslint-plugin-springload.svg?branch=master)](https://travis-ci.org/springload/eslint-plugin-springload)
 
 > Springload's ESLint shareable configurations, as a plugin.
 
