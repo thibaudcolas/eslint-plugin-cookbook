@@ -24,6 +24,18 @@ Configure ESLint to use this config. For example, in your package.json, this wou
 },
 ```
 
+Optionally, use the Prettier config:
+
+```sh
+npm install --save-dev eslint@3 prettier eslint-plugin-springload
+```
+
+```json
+"eslintConfig": {
+  "extends": "plugin:springload/prettier"
+},
+```
+
 ### Configuring the rules
 
 This is a drop-in configuration for Springload projects. Should further customisation be required, rules coming from external plugins require the `springload` prefix:
