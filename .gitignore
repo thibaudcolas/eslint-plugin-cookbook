@@ -8,7 +8,8 @@
 core/static
 core/svg.html
 static
-lib/config.json
+lib/prettier.json
+lib/recommended.json
 
 # -------------------------------------------------
 # OS generated files

@@ -45,7 +45,7 @@
     "lint": "npm run linter:js -- lib",
     "formatter:js": "prettier --print-width 80 --tab-width 4 --single-quote --trailing-comma all",
     "format": "npm run formatter:js -- --write lib/**/*.js",
-    "build": "./lib/buildConfig.js",
+    "build": "./lib/buildConfigs.js",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
