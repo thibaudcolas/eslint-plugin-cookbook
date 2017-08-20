@@ -20,7 +20,10 @@
     "node": ">=6.0.0"
   },
   "eslintConfig": {
-    "extends": "springload"
+    "extends": [
+      "springload",
+      "prettier"
+    ]
   },
   "devDependencies": {
     "eslint": "^3.19.0",
