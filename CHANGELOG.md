@@ -6,6 +6,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## Unreleased
 
+## [[v2.0.4]](https://github.com/springload/eslint-plugin-springload/releases/tag/v2.0.4)
+
+### Removed
+
+- Remove Prettier peerDep to make Prettier install completely optional.
+
 ## [[v2.0.3]](https://github.com/springload/eslint-plugin-springload/releases/tag/v2.0.3)
 
 ### Changed
