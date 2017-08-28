@@ -6,6 +6,16 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## Unreleased
 
+## [[v2.0.3]](https://github.com/springload/eslint-plugin-springload/releases/tag/v2.0.3)
+
+### Changed
+
+- Update to Prettier 1.6
+
+### Added
+
+- Add Prettier config, available at `eslint-plugin-springload/prettier.config.js`.
+
 ## [[v2.0.2]](https://github.com/springload/eslint-plugin-springload/releases/tag/v2.0.2)
 
 ### Added
