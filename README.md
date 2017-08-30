@@ -27,13 +27,64 @@ Configure ESLint to use this config. For example, in your package.json, this wou
 Optionally, use the Prettier config:
 
 ```sh
-npm install --save-dev eslint@3 prettier eslint-plugin-springload
+npm install --save-dev eslint@3 eslint-plugin-springload prettier
 ```
 
 ```json
 "eslintConfig": {
   "extends": "plugin:springload/prettier"
 },
+```
+
+Then, to configure Prettier itself, create a `prettier.config.js` file in the root of your project with:
+
+```js
+// Use the Prettier config that comes with eslint-plugin-springload.
+module.exports = require('eslint-plugin-springload/prettier.config');
+```
+
+### Integration in a development workflow
+
+For Springload projects, linting commands are defined in the package.json as [npm scripts](https://docs.npmjs.com/misc/scripts). Here are example commands leveraging the ESLint and Prettier configuration, to process code in a `lib` subfolder:
+
+```json
+"scripts": {
+    "linter:js": "eslint",
+    "formatter:js": "prettier --write",
+    "lint": "npm run linter:js -s -- lib",
+    "format": "npm run formatter:js -s -- --write lib/**/*.js",
+}
+```
+
+Those commands can then be ran manually.
+
+#### Usage with git pre-commit hook
+
+The above commands are meant to be usable on arbitrary lists of files. Here is an example `pre-commit` script that leverages them to re-format and lint JS when committing:
+
+```sh
+# Only keep staged files that are added (A), copied (C) or modified (M).
+STAGED=$(git --no-pager diff --name-only --cached --diff-filter=ACM)
+# Files which are only partly staged (eg. git add --patch).
+PATCH_STAGED=$(git --no-pager diff --name-only --diff-filter=ACM $STAGED)
+# Files which are fully staged.
+FULLY_STAGED=$(comm -23 <(echo "$STAGED") <(echo "$PATCH_STAGED"))
+
+JS_STAGED=$(grep .js$ <<< "$STAGED" || true)
+JS_FULLY_STAGED=$(grep .js$ <<< "$FULLY_STAGED" || true)
+SNAPSHOT_STAGED=$(grep .snap$ <<< "$STAGED" || true)
+
+if [ -n "$JS_FULLY_STAGED" ];
+then
+    # Format and re-stage fully staged files only.
+    npm run formatter:js -s -- $JS_FULLY_STAGED
+    git add $JS_FULLY_STAGED
+fi
+
+if [ -n "$JS_STAGED" ];
+then
+    npm run linter:js -s -- $JS_STAGED
+fi
 ```
 
 ### Configuring the rules
@@ -51,6 +102,8 @@ This is a drop-in configuration for Springload projects. Should further customis
   }
 }
 ```
+
+### Usage
 
 ## Development
 
