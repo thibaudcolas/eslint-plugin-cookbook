@@ -51,7 +51,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "test:ci": "npm run lint -s && npm run test:coverage -s",
+    "test:ci": "npm run build -s && npm run lint -s && npm run test:coverage -s",
     "report:coverage": "open coverage/lcov-report/index.html"
   }
 }
