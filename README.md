@@ -52,7 +52,7 @@ For Springload projects, linting commands are defined in the package.json as [np
     "linter:js": "eslint",
     "formatter:js": "prettier --write",
     "lint": "npm run linter:js -s -- lib",
-    "format": "npm run formatter:js -s -- --write lib/**/*.js",
+    "format": "npm run formatter:js -s -- lib/**/*.js",
 }
 ```
 
