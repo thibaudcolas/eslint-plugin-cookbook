@@ -24,11 +24,15 @@ Configure ESLint to use this config. For example, in your package.json, this wou
 },
 ```
 
-Optionally, use the Prettier config:
+### With Prettier
+
+This ESLint plugin comes with a built-in Prettier-compatible config. First, install Prettier:
 
 ```sh
-npm install --save-dev eslint@3 eslint-plugin-springload prettier
+npm install --save-dev prettier
 ```
+
+Switch to the Prettier config:
 
 ```json
 "eslintConfig": {
