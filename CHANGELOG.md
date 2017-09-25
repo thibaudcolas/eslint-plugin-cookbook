@@ -6,6 +6,16 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## Unreleased
 
+## [[v2.2.0]](https://github.com/springload/eslint-plugin-springload/releases/tag/v2.2.0)
+
+### Fixed
+
+- Fix config attribute for semicolons.
+
+### Removed
+
+- Remove config overrides for JSON.
+
 ## [[v2.1.0]](https://github.com/springload/eslint-plugin-springload/releases/tag/v2.1.0)
 
 ### Added
