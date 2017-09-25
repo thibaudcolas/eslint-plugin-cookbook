@@ -8,6 +8,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [[v2.2.0]](https://github.com/springload/eslint-plugin-springload/releases/tag/v2.2.0)
 
+### Changed
+
+- Update dependencies.
+
 ### Fixed
 
 - Fix config attribute for semicolons.
