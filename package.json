@@ -1,7 +1,8 @@
 {
   "name": "@thibaudcolas/eslint-plugin-cookbook",
   "version": "2.2.0",
-  "description": "Shareable ESLint config, based on airbnb/javascript, bundled as a plugin",
+  "description":
+    "Shareable ESLint config, based on airbnb/javascript, bundled as a plugin",
   "license": "MIT",
   "author": "Thibaud Colas",
   "main": "./src/config.js",
@@ -20,9 +21,7 @@
     "eslintplugin",
     "eslint-plugin"
   ],
-  "files": [
-    "src/"
-  ],
+  "files": ["src/"],
   "devDependencies": {
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-conventional": "^7.1.2",
@@ -47,9 +46,10 @@
     "eslint": "^5.6.0"
   },
   "scripts": {
-    "lint": "eslint . && prettier --list-different '**/*.{js,md,css,scss,yaml,yml,json}'",
+    "lint":
+      "eslint . && prettier --list-different '**/*.{js,md,css,scss,yaml,yml,json}'",
     "format": "prettier --write '**/*.{js,md,css,scss,yaml,yml,json}'",
-    "build": "./lib/buildConfigs.js",
+    "build": "./src/buildConfigs.js",
     "build:docs": "node src/documentation.js",
     "test": "jest",
     "test:coverage": "jest --coverage",
