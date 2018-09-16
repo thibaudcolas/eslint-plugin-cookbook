@@ -22,6 +22,8 @@
   ],
   "files": ["src/"],
   "devDependencies": {
+    "@commitlint/cli": "^7.1.2",
+    "@commitlint/config-conventional": "^7.1.2",
     "eslint": "^3.19.0",
     "eslint-config-prettier": "^2.6.0",
     "eslint-config-springload": "^1.1.0",
