@@ -1,7 +1,7 @@
 {
   "name": "@thibaudcolas/eslint-plugin-cookbook",
   "version": "2.2.0",
-  "description": "Shareable ESLint config, based on airbnb/javascript",
+  "description": "Shareable ESLint config, based on airbnb/javascript, bundled as a plugin",
   "license": "MIT",
   "author": "Thibaud Colas",
   "main": "./src/config.js",
