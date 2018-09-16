@@ -20,7 +20,9 @@
     "eslintplugin",
     "eslint-plugin"
   ],
-  "files": ["src/"],
+  "files": [
+    "src/"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-conventional": "^7.1.2",
@@ -28,7 +30,7 @@
     "eslint-config-prettier": "^2.6.0",
     "eslint-config-springload": "^1.1.0",
     "jest": "^21.1.0",
-    "prettier": "^1.7.0"
+    "prettier": "^1.14.2"
   },
   "dependencies": {
     "babel-eslint": "^7.0.0",
@@ -49,8 +51,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "test:ci":
-      "npm run build -s && npm run lint -s && npm run test:coverage -s",
+    "test:ci": "npm run build -s && npm run lint -s && npm run test:coverage -s",
     "report:coverage": "open coverage/lcov-report/index.html"
   }
 }
