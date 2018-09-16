@@ -86,7 +86,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 First usable release!
 
--------------
+---
 
 Template from http://keepachangelog.com/
 
