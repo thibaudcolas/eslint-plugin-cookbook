@@ -1,14 +1,18 @@
 {
-  "name": "eslint-plugin-springload",
+  "name": "@thibaudcolas/eslint-plugin-cookbook",
   "version": "2.2.0",
-  "description": "Springload's ESLint shareable configurations as a plugin",
+  "description": "Shareable ESLint config, based on airbnb/javascript",
   "license": "MIT",
-  "author": "Springload",
-  "main": "./lib/index.js",
+  "author": "Thibaud Colas",
+  "main": "./src/config.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/springload/eslint-plugin-springload"
+    "url": "https://github.com/thibaudcolas/eslint-plugin-cookbook"
   },
+  "bugs": {
+    "url": "https://github.com/thibaudcolas/eslint-plugin-cookbook/issues"
+  },
+  "homepage": "https://github.com/thibaudcolas/eslint-plugin-cookbook",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -16,15 +20,7 @@
     "eslintplugin",
     "eslint-plugin"
   ],
-  "engines": {
-    "node": ">=6.0.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "springload",
-      "prettier"
-    ]
-  },
+  "files": ["src/"],
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-prettier": "^2.6.0",
@@ -51,7 +47,8 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "test:ci": "npm run build -s && npm run lint -s && npm run test:coverage -s",
+    "test:ci":
+      "npm run build -s && npm run lint -s && npm run test:coverage -s",
     "report:coverage": "open coverage/lcov-report/index.html"
   }
 }
