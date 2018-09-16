@@ -9,17 +9,20 @@ const path = require("path");
 
 const { getComputedConfig, wrapInPlugin } = require("./config");
 const prettierConfig = require("../prettier.config");
+const base = require("./base");
 
 const configs = {
-  recommended: {
-    extends: ["springload"],
-  },
+  recommended: base,
   prettier: {
-    extends: ["springload", "prettier", "prettier/flowtype", "prettier/react"],
+    extends: base.extends.concat([
+      "prettier",
+      "prettier/flowtype",
+      "prettier/react",
+    ]),
     plugins: ["prettier"],
-    rules: {
+    rules: Object.assign({}, base.rules, {
       "prettier/prettier": ["error", prettierConfig],
-    },
+    }),
   },
 };
 

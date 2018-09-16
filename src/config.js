@@ -22,9 +22,9 @@ const wrapInPlugin = (config) => {
     // We expose a config already computed from the whole extends chain, so no extends here.
     extends: [],
     // Plugins appear to come from this plugin, so it's the only one externally visible.
-    plugins: ["springload"],
+    plugins: ["@thibaudcolas/cookbook"],
     // The rules from third-party plugins need to be prefixed so they reference our plugin instead.
-    rules: prefixConfigRules("springload", config.rules),
+    rules: prefixConfigRules("@thibaudcolas/cookbook", config.rules),
   });
 };
 
