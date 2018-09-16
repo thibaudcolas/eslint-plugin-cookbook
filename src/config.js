@@ -18,7 +18,6 @@ const getComputedConfig = (config) => {
 // as a pluginc onfig.
 const wrapInPlugin = (config) => {
   return Object.assign({}, config, {
-    parser: "babel-eslint",
     // We expose a config already computed from the whole extends chain, so no extends here.
     extends: [],
     // Plugins appear to come from this plugin, so it's the only one externally visible.
