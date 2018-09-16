@@ -1,4 +1,4 @@
-const { danger, message, warn, fail, schedule } = require("danger");
+const { danger, warn, fail } = require("danger");
 
 // Fails if the description is too short.
 if (!danger.github.pr.body || danger.github.pr.body.length < 10) {
