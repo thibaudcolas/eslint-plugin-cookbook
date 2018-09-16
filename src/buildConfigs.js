@@ -6,6 +6,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const prettier = require("prettier");
 
 const { getComputedConfig, wrapInPlugin } = require("./config");
 const prettierConfig = require("../prettier.config");
@@ -33,6 +34,6 @@ Object.keys(configs).forEach((name) => {
 
   fs.writeFileSync(
     path.join(__dirname, `${name}.json`),
-    JSON.stringify(wrappedConfig),
+    prettier.format(JSON.stringify(wrappedConfig), { parser: "json" }),
   );
 });
