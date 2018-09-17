@@ -15,6 +15,9 @@ const getComputedConfig = (baseConfig) => {
   delete config.filePath;
   delete config.baseDirectory;
 
+  // Remove option that does not serialise well to JSON.
+  config.rules["import/no-cycle"] = config.rules["import/no-cycle"][0];
+
   return config;
 };
 
