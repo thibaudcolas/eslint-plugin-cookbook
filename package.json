@@ -4,7 +4,7 @@
   "description": "Shareable ESLint config, based on airbnb/javascript, bundled as a plugin",
   "license": "MIT",
   "author": "Thibaud Colas",
-  "main": "./src/config.js",
+  "main": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/thibaudcolas/eslint-plugin-cookbook"
