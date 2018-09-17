@@ -16,10 +16,10 @@ branches:
     - gh-pages
 notifications:
   email: false
-# deploy:
-#   provider: script
-#   skip_cleanup: true
-#   script: npm run semantic-release
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: npm run semantic-release
 env:
   global:
     # travis encrypt --pro DANGER_JS_APP_INSTALL_ID=<value>
