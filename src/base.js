@@ -46,6 +46,9 @@ module.exports = {
     // Does not work at the moment for nested fields.
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
     "jsx-a11y/label-has-for": [0],
+    // Override airbnb config to make it serialisable to JSON.
+    // https://github.com/airbnb/javascript/blob/32a7bf44c2e5b3d2a5d05af46716fbe45bc09bec/packages/eslint-config-airbnb-base/rules/imports.js#L230
+    "import/no-cycle": [2],
   },
 
   // http://eslint.org/docs/user-guide/configuring#specifying-environments

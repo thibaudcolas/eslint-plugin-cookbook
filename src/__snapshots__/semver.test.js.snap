@@ -22,6 +22,9 @@ Object {
     "id-length": Array [
       0,
     ],
+    "import/no-cycle": Array [
+      2,
+    ],
     "import/no-extraneous-dependencies": Array [
       2,
       Object {
