@@ -4,14 +4,18 @@ const { prefixConfigRules } = require("./plugins");
 
 // Very heavy-handed, and likely brittle for a million reasons.
 // This is just a test to see what happens, don't do this at home.
-const getComputedConfig = (config) => {
+const getComputedConfig = (baseConfig) => {
   const cli = new CLIEngine({
     useEslintrc: false,
     allowInlineConfig: false,
-    baseConfig: config,
+    baseConfig,
   });
 
-  return cli.getConfigForFile("index.js");
+  const config = cli.getConfigForFile("index.js");
+  delete config.filePath;
+  delete config.baseDirectory;
+
+  return config;
 };
 
 // Wraps a given config object with the right dependencies for consumption
