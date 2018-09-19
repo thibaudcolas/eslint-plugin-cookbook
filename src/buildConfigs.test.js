@@ -1,31 +1,44 @@
 const pkg = require("../package.json");
 const { CLIEngine } = require("eslint");
 
+const convertRefs = (config) => {
+  config.rules = Object.keys(config.rules).reduce((rules, key) => {
+    const newKey = key.replace("@thibaudcolas/cookbook/", "");
+
+    rules[newKey] = config.rules[key];
+
+    return rules;
+  }, {});
+
+  config.plugins = Object.keys(pkg.dependencies)
+    .filter((dep) => dep.startsWith("eslint-plugin"))
+    .map((dep) => dep.replace("eslint-plugin-", ""));
+
+  return config;
+};
+
 describe("buildConfigs", () => {
-  describe("recommended", () => {
-    it("is a valid config", () => {
-      const config = require("./recommended.json");
+  it("recommended is valid", () => {
+    const cli = new CLIEngine({
+      baseConfig: convertRefs(require("./recommended.json")),
+    });
 
-      config.rules = Object.keys(config.rules).reduce((rules, key) => {
-        const newKey = key.replace("@thibaudcolas/cookbook/", "");
+    expect(
+      cli.executeOnText("import test from 'potato'; var foo;", "foo.js"),
+    ).toMatchObject({
+      errorCount: 4,
+    });
+  });
 
-        rules[newKey] = config.rules[key];
+  it("prettier is valid", () => {
+    const cli = new CLIEngine({
+      baseConfig: convertRefs(require("./prettier.json")),
+    });
 
-        return rules;
-      }, {});
-
-      config.plugins = Object.keys(pkg.dependencies)
-        .filter((dep) => dep.startsWith("eslint-plugin"))
-        .map((dep) => dep.replace("eslint-plugin-", ""));
-
-      const cli = new CLIEngine({
-        baseConfig: config,
-      });
-
-      expect(
-        cli.executeOnText("import test from 'potato'; var foo;").results[0]
-          .messages,
-      ).toHaveLength(4);
+    expect(
+      cli.executeOnText("import test from 'potato'; var foo;", "foo.js"),
+    ).toMatchObject({
+      errorCount: 5,
     });
   });
 });
