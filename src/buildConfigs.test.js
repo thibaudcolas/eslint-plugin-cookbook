@@ -29,16 +29,4 @@ describe("buildConfigs", () => {
       errorCount: 4,
     });
   });
-
-  it("prettier is valid", () => {
-    const cli = new CLIEngine({
-      baseConfig: convertRefs(require("./prettier.json")),
-    });
-
-    expect(
-      cli.executeOnText("import test from 'potato'; var foo;", "foo.js"),
-    ).toMatchObject({
-      errorCount: 4,
-    });
-  });
 });

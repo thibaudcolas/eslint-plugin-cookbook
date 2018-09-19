@@ -88,5 +88,4 @@ lib64
 # -------------------------------------------------
 # Your own project's ignores
 # -------------------------------------------------
-src/prettier.json
-src/recommended.json
+src/*.json

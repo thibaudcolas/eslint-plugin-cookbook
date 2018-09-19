@@ -13,13 +13,6 @@ const base = require("./base");
 
 const configs = {
   recommended: base,
-  prettier: {
-    extends: base.extends.concat([
-      "prettier",
-      "prettier/flowtype",
-      "prettier/react",
-    ]),
-  },
 };
 
 Object.keys(configs).forEach((name) => {
