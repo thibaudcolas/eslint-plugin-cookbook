@@ -11,6 +11,9 @@ Object {
   },
   "extends": Array [
     "airbnb",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react",
   ],
   "rules": Object {
     "arrow-body-style": Array [

@@ -27,22 +27,13 @@ module.exports = {
 
 ### With Prettier
 
-This ESLint plugin comes with a built-in Prettier-compatible config. First, install Prettier:
+This recommended config is Prettier-compatible. First, install Prettier:
 
 ```sh
 npm install --save-dev prettier
 ```
 
-Switch to the Prettier config:
-
-```js
-module.exports = {
-  // https://github.com/thibaudcolas/eslint-plugin-cookbook
-  extends: "plugin:@thibaudcolas/cookbook/prettier",
-};
-```
-
-Then, to configure Prettier itself, create a `prettier.config.js` file in the root of your project with:
+Then, to configure Prettier itself, create a `prettier.config.js` file in the root of your project. You can use the following to get started:
 
 ```js
 // https://github.com/thibaudcolas/eslint-plugin-cookbook

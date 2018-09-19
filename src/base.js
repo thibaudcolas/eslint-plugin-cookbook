@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb"],
+  extends: ["airbnb", "prettier", "prettier/flowtype", "prettier/react"],
 
   rules: {
     indent: [2, 4],

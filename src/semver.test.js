@@ -1,5 +1,4 @@
 const pkg = require("../package.json");
-const config = require("./base");
 
 describe("semver - should those tests break, consider releasing a new major version of the package", () => {
   it("dependencies", () => {
@@ -18,9 +17,5 @@ describe("semver - should those tests break, consider releasing a new major vers
         return deps;
       }, {});
     expect(devDependencies).toMatchSnapshot();
-  });
-
-  it("custom config", () => {
-    expect(config).toMatchSnapshot();
   });
 });

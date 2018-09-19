@@ -11,7 +11,7 @@ describe("config", () => {
     });
 
     expect(cli.executeOnText("var foo\n")).toMatchObject({
-      errorCount: 3,
+      errorCount: 2,
       warningCount: 0,
     });
   });
