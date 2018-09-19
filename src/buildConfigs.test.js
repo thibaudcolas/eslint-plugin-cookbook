@@ -38,7 +38,7 @@ describe("buildConfigs", () => {
     expect(
       cli.executeOnText("import test from 'potato'; var foo;", "foo.js"),
     ).toMatchObject({
-      errorCount: 5,
+      errorCount: 4,
     });
   });
 });
