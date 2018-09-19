@@ -874,9 +874,29 @@ Object {
     "@thibaudcolas/cookbook/import/no-extraneous-dependencies": Array [
       2,
       Object {
-        "devDependencies": true,
+        "devDependencies": Array [
+          "test/**",
+          "tests/**",
+          "spec/**",
+          "**/__tests__/**",
+          "**/__mocks__/**",
+          "test.{js,jsx}",
+          "test-*.{js,jsx}",
+          "**/*{.,_}{test,spec}.{js,jsx}",
+          "**/jest.config.js",
+          "**/vue.config.js",
+          "**/webpack.config.js",
+          "**/webpack.config.*.js",
+          "**/rollup.config.js",
+          "**/rollup.config.*.js",
+          "**/gulpfile.js",
+          "**/gulpfile.*.js",
+          "**/Gruntfile{,.js}",
+          "**/protractor.conf.js",
+          "**/protractor.conf.*.js",
+          "**/dangerfile.js",
+        ],
         "optionalDependencies": false,
-        "peerDependencies": false,
       },
     ],
     "@thibaudcolas/cookbook/import/no-internal-modules": Array [
@@ -916,9 +936,7 @@ Object {
         ],
       },
     ],
-    "@thibaudcolas/cookbook/import/prefer-default-export": Array [
-      0,
-    ],
+    "@thibaudcolas/cookbook/import/prefer-default-export": "error",
     "@thibaudcolas/cookbook/import/unambiguous": "off",
     "@thibaudcolas/cookbook/jsx-a11y/accessible-emoji": "error",
     "@thibaudcolas/cookbook/jsx-a11y/alt-text": Array [
@@ -982,7 +1000,7 @@ Object {
     "@thibaudcolas/cookbook/jsx-a11y/img-redundant-alt": "error",
     "@thibaudcolas/cookbook/jsx-a11y/interactive-supports-focus": "error",
     "@thibaudcolas/cookbook/jsx-a11y/label-has-associated-control": Array [
-      "error",
+      0,
       Object {
         "assert": "both",
         "controlComponents": Array [],
@@ -1184,7 +1202,7 @@ Object {
       },
     ],
     "@thibaudcolas/cookbook/react/jsx-boolean-value": Array [
-      0,
+      "error",
       "never",
       Object {
         "always": Array [],
@@ -1234,12 +1252,12 @@ Object {
       },
     ],
     "@thibaudcolas/cookbook/react/jsx-indent": Array [
+      "off",
       2,
-      4,
     ],
     "@thibaudcolas/cookbook/react/jsx-indent-props": Array [
+      "off",
       2,
-      4,
     ],
     "@thibaudcolas/cookbook/react/jsx-key": "off",
     "@thibaudcolas/cookbook/react/jsx-max-depth": "off",
@@ -1412,7 +1430,7 @@ Object {
     "@thibaudcolas/cookbook/react/require-render-return": "error",
     "@thibaudcolas/cookbook/react/self-closing-comp": "error",
     "@thibaudcolas/cookbook/react/sort-comp": Array [
-      0,
+      "error",
       Object {
         "groups": Object {
           "lifecycle": Array [
@@ -1489,7 +1507,7 @@ Object {
       },
     ],
     "arrow-body-style": Array [
-      0,
+      "error",
       "as-needed",
       Object {
         "requireReturnForObjectLiteral": false,
@@ -1635,7 +1653,7 @@ Object {
       },
     ],
     "eol-last": Array [
-      1,
+      "off",
       "always",
     ],
     "eqeqeq": Array [
@@ -1684,22 +1702,56 @@ Object {
     "guard-for-in": "error",
     "handle-callback-err": "off",
     "id-blacklist": "off",
-    "id-length": Array [
-      0,
-    ],
+    "id-length": "off",
     "id-match": "off",
     "implicit-arrow-linebreak": Array [
       "off",
       "beside",
     ],
     "indent": Array [
+      "off",
       2,
-      4,
+      Object {
+        "ArrayExpression": 1,
+        "CallExpression": Object {
+          "arguments": 1,
+        },
+        "FunctionDeclaration": Object {
+          "body": 1,
+          "parameters": 1,
+        },
+        "FunctionExpression": Object {
+          "body": 1,
+          "parameters": 1,
+        },
+        "ImportDeclaration": 1,
+        "ObjectExpression": 1,
+        "SwitchCase": 1,
+        "VariableDeclarator": 1,
+        "flatTernaryExpressions": false,
+        "ignoreComments": false,
+        "ignoredNodes": Array [
+          "JSXElement",
+          "JSXElement > *",
+          "JSXAttribute",
+          "JSXIdentifier",
+          "JSXNamespacedName",
+          "JSXMemberExpression",
+          "JSXSpreadAttribute",
+          "JSXExpressionContainer",
+          "JSXOpeningElement",
+          "JSXClosingElement",
+          "JSXText",
+          "JSXEmptyExpression",
+          "JSXSpreadChild",
+        ],
+        "outerIIFEBody": 1,
+      },
     ],
     "indent-legacy": "off",
     "init-declarations": "off",
     "jsx-quotes": Array [
-      1,
+      "off",
       "prefer-double",
     ],
     "key-spacing": Array [
@@ -1763,10 +1815,14 @@ Object {
       4,
     ],
     "max-len": Array [
-      1,
-      120,
-      4,
+      0,
+      100,
+      2,
       Object {
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
         "ignoreUrls": true,
       },
     ],
@@ -1855,17 +1911,7 @@ Object {
         "allowParens": true,
       },
     ],
-    "no-console": Array [
-      1,
-      Object {
-        "allow": Array [
-          "warn",
-          "error",
-          "time",
-          "timeEnd",
-        ],
-      },
-    ],
+    "no-console": "warn",
     "no-const-assign": "error",
     "no-constant-condition": "warn",
     "no-continue": "error",
@@ -2043,7 +2089,7 @@ Object {
       "error",
     ],
     "no-multi-spaces": Array [
-      0,
+      "off",
       Object {
         "ignoreEOLComments": false,
       },
@@ -2060,9 +2106,7 @@ Object {
     "no-negated-condition": "off",
     "no-negated-in-lhs": "off",
     "no-nested-ternary": "error",
-    "no-new": Array [
-      1,
-    ],
+    "no-new": "error",
     "no-new-func": "error",
     "no-new-object": "error",
     "no-new-require": "error",
@@ -2078,9 +2122,7 @@ Object {
       },
     ],
     "no-path-concat": "error",
-    "no-plusplus": Array [
-      0,
-    ],
+    "no-plusplus": "error",
     "no-process-env": "off",
     "no-process-exit": "off",
     "no-proto": "error",
@@ -2382,8 +2424,12 @@ Object {
       },
     ],
     "object-shorthand": Array [
-      2,
-      "methods",
+      "error",
+      "always",
+      Object {
+        "avoidQuotes": true,
+        "ignoreConstructors": false,
+      },
     ],
     "one-var": Array [
       "error",

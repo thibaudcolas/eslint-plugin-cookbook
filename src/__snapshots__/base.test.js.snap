@@ -16,70 +16,45 @@ Object {
     "prettier/react",
   ],
   "rules": Object {
-    "arrow-body-style": Array [
-      0,
-    ],
-    "eol-last": Array [
-      1,
-    ],
-    "id-length": Array [
-      0,
-    ],
     "import/no-extraneous-dependencies": Array [
       2,
       Object {
-        "devDependencies": true,
+        "devDependencies": Array [
+          "test/**",
+          "tests/**",
+          "spec/**",
+          "**/__tests__/**",
+          "**/__mocks__/**",
+          "test.{js,jsx}",
+          "test-*.{js,jsx}",
+          "**/*{.,_}{test,spec}.{js,jsx}",
+          "**/jest.config.js",
+          "**/vue.config.js",
+          "**/webpack.config.js",
+          "**/webpack.config.*.js",
+          "**/rollup.config.js",
+          "**/rollup.config.*.js",
+          "**/gulpfile.js",
+          "**/gulpfile.*.js",
+          "**/Gruntfile{,.js}",
+          "**/protractor.conf.js",
+          "**/protractor.conf.*.js",
+          "**/dangerfile.js",
+        ],
         "optionalDependencies": false,
-        "peerDependencies": false,
       },
     ],
-    "import/prefer-default-export": Array [
+    "jsx-a11y/label-has-associated-control": Array [
       0,
-    ],
-    "indent": Array [
-      2,
-      4,
     ],
     "jsx-a11y/label-has-for": Array [
       0,
-    ],
-    "jsx-quotes": Array [
-      1,
-      "prefer-double",
-    ],
-    "max-len": Array [
-      1,
-      120,
-      4,
-      Object {
-        "ignoreUrls": true,
-      },
-    ],
-    "no-console": Array [
-      1,
-      Object {
-        "allow": Array [
-          "warn",
-          "error",
-          "time",
-          "timeEnd",
-        ],
-      },
-    ],
-    "no-multi-spaces": Array [
-      0,
-    ],
-    "no-new": Array [
-      1,
     ],
     "no-param-reassign": Array [
       2,
       Object {
         "props": false,
       },
-    ],
-    "no-plusplus": Array [
-      0,
     ],
     "no-warning-comments": Array [
       1,
@@ -92,10 +67,6 @@ Object {
         ],
       },
     ],
-    "object-shorthand": Array [
-      2,
-      "methods",
-    ],
     "react/forbid-prop-types": Array [
       2,
       Object {
@@ -103,9 +74,6 @@ Object {
           "any",
         ],
       },
-    ],
-    "react/jsx-boolean-value": Array [
-      0,
     ],
     "react/jsx-filename-extension": Array [
       2,
@@ -115,18 +83,7 @@ Object {
         ],
       },
     ],
-    "react/jsx-indent": Array [
-      2,
-      4,
-    ],
-    "react/jsx-indent-props": Array [
-      2,
-      4,
-    ],
     "react/jsx-no-bind": Array [
-      0,
-    ],
-    "react/sort-comp": Array [
       0,
     ],
   },
