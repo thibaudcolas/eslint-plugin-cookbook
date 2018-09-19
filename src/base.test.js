@@ -1,6 +1,8 @@
 const path = require("path");
 const CLIEngine = require("eslint").CLIEngine;
 
+const base = require("./base");
+
 describe("config", () => {
   it("works", () => {
     const cli = new CLIEngine({
@@ -12,5 +14,9 @@ describe("config", () => {
       errorCount: 3,
       warningCount: 0,
     });
+  });
+
+  it("semver", () => {
+    expect(base).toMatchSnapshot();
   });
 });

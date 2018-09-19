@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`config semver 1`] = `
+Object {
+  "env": Object {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true,
+  },
+  "extends": Array [
+    "airbnb",
+  ],
+  "rules": Object {
+    "arrow-body-style": Array [
+      0,
+    ],
+    "eol-last": Array [
+      1,
+    ],
+    "id-length": Array [
+      0,
+    ],
+    "import/no-extraneous-dependencies": Array [
+      2,
+      Object {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false,
+      },
+    ],
+    "import/prefer-default-export": Array [
+      0,
+    ],
+    "indent": Array [
+      2,
+      4,
+    ],
+    "jsx-a11y/label-has-for": Array [
+      0,
+    ],
+    "jsx-quotes": Array [
+      1,
+      "prefer-double",
+    ],
+    "max-len": Array [
+      1,
+      120,
+      4,
+      Object {
+        "ignoreUrls": true,
+      },
+    ],
+    "no-console": Array [
+      1,
+      Object {
+        "allow": Array [
+          "warn",
+          "error",
+          "time",
+          "timeEnd",
+        ],
+      },
+    ],
+    "no-multi-spaces": Array [
+      0,
+    ],
+    "no-new": Array [
+      1,
+    ],
+    "no-param-reassign": Array [
+      2,
+      Object {
+        "props": false,
+      },
+    ],
+    "no-plusplus": Array [
+      0,
+    ],
+    "no-warning-comments": Array [
+      1,
+      Object {
+        "location": "start",
+        "terms": Array [
+          "todo",
+          "fixme",
+          "xxx",
+        ],
+      },
+    ],
+    "object-shorthand": Array [
+      2,
+      "methods",
+    ],
+    "react/forbid-prop-types": Array [
+      2,
+      Object {
+        "forbid": Array [
+          "any",
+        ],
+      },
+    ],
+    "react/jsx-boolean-value": Array [
+      0,
+    ],
+    "react/jsx-filename-extension": Array [
+      2,
+      Object {
+        "extensions": Array [
+          ".js",
+        ],
+      },
+    ],
+    "react/jsx-indent": Array [
+      2,
+      4,
+    ],
+    "react/jsx-indent-props": Array [
+      2,
+      4,
+    ],
+    "react/jsx-no-bind": Array [
+      0,
+    ],
+    "react/sort-comp": Array [
+      0,
+    ],
+  },
+}
+`;
