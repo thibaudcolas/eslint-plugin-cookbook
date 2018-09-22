@@ -22,7 +22,12 @@ Object {
 
   it("devDependencies", () => {
     const devDependencies = Object.keys(pkg.devDependencies)
-      .filter((dep) => dep.startsWith("eslint"))
+      .filter(
+        (dep) =>
+          dep === "eslint" ||
+          dep.startsWith("eslint-config") ||
+          dep.startsWith("eslint-plugin"),
+      )
       .reduce((deps, key) => {
         deps[key] = pkg.devDependencies[key];
         return deps;
