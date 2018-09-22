@@ -76,7 +76,7 @@ To get the most out of this config, it is assumed that projects have the followi
 - [no-param-reassign](https://eslint.org/docs/rules/no-param-reassign): `2, props: false`
 - [react/forbid-prop-types](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md): `2, forbid: any`
 
-### Rules of `eslint-config-airbnb`
+### Rules of [`eslint-config-airbnb`](https://github.com/airbnb/javascript)
 
 <details>
 
