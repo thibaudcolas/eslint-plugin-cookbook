@@ -10,10 +10,10 @@ We want shareable configs to have as low of an overhead as possible. Users shoul
 
 ## Usage
 
-Install stylelint and the config:
+Install ESLint and the config:
 
 ```sh
-npm install --save-dev stylelint @thibaudcolas/eslint-plugin-cookbook
+npm install --save-dev eslint @thibaudcolas/eslint-plugin-cookbook
 ```
 
 Then [configure ESLint to use this config](https://eslint.org/docs/user-guide/configuring#extending-configuration-files). As a `.eslintrc.js` in the root of your project:
