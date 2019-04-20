@@ -7,3 +7,10 @@ then
   npm run build
   npm run test
 fi
+
+DANGER_STAGED=$(grep -e 'dangerfile.js$' <<< "$STAGED" || true)
+
+if [ -n "$DANGER_STAGED" ];
+then
+  npx danger local
+fi
