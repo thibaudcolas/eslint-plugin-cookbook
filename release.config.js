@@ -57,7 +57,8 @@ module.exports = {
     },
     {
       path: "@semantic-release/exec",
-      cmd: "npm run build:docs && prettier --write README.md CHANGELOG.md",
+      cmd:
+        "npm run build:docs && prettier --write README.md CHANGELOG.md && rm -rf .git/hooks",
     },
     "@semantic-release/npm",
     {

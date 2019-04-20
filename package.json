@@ -58,6 +58,7 @@
     "test:ci": "npm run build && npm run lint && npm run test:coverage",
     "report:coverage": "open coverage/lcov-report/index.html",
     "danger": "danger ci --verbose",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "./.githooks/deploy.sh"
   }
 }
