@@ -3,9 +3,9 @@ const jsxA11YPlugin = require("eslint-plugin-jsx-a11y");
 const reactPlugin = require("eslint-plugin-react");
 
 const plugins = {
-  import: importPlugin,
+  "import": importPlugin,
   "jsx-a11y": jsxA11YPlugin,
-  react: reactPlugin,
+  "react": reactPlugin,
 };
 
 /**

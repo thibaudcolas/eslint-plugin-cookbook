@@ -2,27 +2,27 @@
 
 if [ -n "$JS_STAGED" ];
 then
-    npx prettier --list-different $JS_STAGED
+    npx prettier --check $JS_STAGED
 fi
 
 if [ -n "$SCSS_STAGED" ];
 then
-    npx prettier --list-different $SCSS_STAGED
+    npx prettier --check $SCSS_STAGED
 fi
 
 if [ -n "$MD_STAGED" ];
 then
-    npx prettier --list-different $MD_STAGED
+    npx prettier --check $MD_STAGED
 fi
 
 if [ -n "$JSON_STAGED" ];
 then
-    npx prettier --list-different $JSON_STAGED
+    npx prettier --check $JSON_STAGED
 fi
 
 if [ -n "$YAML_STAGED" ];
 then
-    npx prettier --list-different $YAML_STAGED
+    npx prettier --check $YAML_STAGED
 fi
 
 TRAVIS_STAGED=$(grep -e '.travis.yml$' -e '.travis.yaml$' <<< "$STAGED" || true)
