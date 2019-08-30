@@ -57,6 +57,7 @@
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "test:ci": "npm run build && npm run lint && npm run test:coverage",
-    "prepare": "./.githooks/deploy.sh"
+    "prepare": "./.githooks/deploy.sh",
+    "report:package": "npm pack --loglevel notice 2>&1 >/dev/null | sed -e 's/^npm notice //' && rm *.tgz"
   }
 }
