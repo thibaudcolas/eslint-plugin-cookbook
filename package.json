@@ -52,14 +52,11 @@
     "format": "prettier --write '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
     "build": "./src/buildConfigs.js",
     "build:docs": "node src/documentation.js",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run build && npm run build:docs",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "test:ci": "npm run build && npm run lint && npm run test:coverage",
-    "report:coverage": "open coverage/lcov-report/index.html",
-    "danger": "danger ci --verbose",
-    "semantic-release": "semantic-release",
     "prepare": "./.githooks/deploy.sh"
   }
 }
