@@ -48,8 +48,8 @@
     "eslint": "^5.6.0"
   },
   "scripts": {
-    "lint": "eslint --report-unused-disable-directives . && prettier --check '**/*.{js,md,css,scss,yaml,yml,json}'",
-    "format": "prettier --write '**/*.{js,md,css,scss,yaml,yml,json}'",
+    "lint": "eslint --report-unused-disable-directives . && prettier --check '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
+    "format": "prettier --write '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'",
     "build": "./src/buildConfigs.js",
     "build:docs": "node src/documentation.js",
     "prepublishOnly": "npm run build",
