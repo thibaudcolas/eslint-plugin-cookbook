@@ -1,4 +1,4 @@
-const { danger, warn, fail } = require("danger");
+const { danger, message, warn, fail, schedule } = require("danger");
 const isLocal = !danger.github;
 
 if (!isLocal) {
@@ -27,3 +27,25 @@ if (hasPackageChanges && !hasLockfileChanges) {
     "There are package.json changes with no corresponding lockfile changes.",
   );
 }
+
+const linkDep = (dep) =>
+  danger.utils.href(`https://www.npmjs.com/package/${dep}`, dep);
+
+schedule(async () => {
+  const packageDiff = await danger.git.JSONDiffForFile("package.json");
+
+  if (packageDiff.dependencies) {
+    const added = packageDiff.dependencies.added;
+    const removed = packageDiff.dependencies.removed;
+
+    if (added.length) {
+      const deps = danger.utils.sentence(added.map((d) => linkDep(d)));
+      message(`Adding new dependencies: ${deps}.`);
+    }
+
+    if (removed.length) {
+      const deps = danger.utils.sentence(removed.map((d) => linkDep(d)));
+      message(`:tada:, removing dependencies: ${deps}.`);
+    }
+  }
+});
