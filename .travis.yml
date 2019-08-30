@@ -1,16 +1,16 @@
 sudo: false
 language: node_js
-cache:
-  directories:
-    - node_modules
 install:
-  - npm install
-  - npm install -g @commitlint/travis-cli@^7.0.0
+  - npm ci
 script:
+  # Test Git hooks in CI, to make sure script upgrades do not break them.
+  - npm run prepare
+  # Test commit message validation in CI.
+  - git log -1 --pretty=%B >> latest.log && ./.git/hooks/commit-msg latest.log
   - npm run test:ci
-  - commitlint-travis
-  - if [ "$TRAVIS_SECURE_ENV_VARS" == true ]; then npm run danger; fi
-  - npm pack --loglevel notice
+  - npx commitlint-travis
+  - if [ "$TRAVIS_SECURE_ENV_VARS" == true ]; then npx danger ci --verbose; fi
+  - npm run report:package
 branches:
   except:
     - gh-pages
@@ -19,7 +19,7 @@ notifications:
 deploy:
   provider: script
   skip_cleanup: true
-  script: npm run semantic-release
+  script: npx semantic-release
 env:
   global:
     # travis encrypt --pro DANGER_JS_APP_INSTALL_ID=<value>
