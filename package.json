@@ -36,7 +36,7 @@
     "eslint-config-prettier": "^3.0.1",
     "eslint-rule-documentation": "^1.0.21",
     "jest": "^24.7.1",
-    "prettier": "^1.17.0",
+    "prettier": "^1.18.2",
     "semantic-release": "^15.13.3"
   },
   "dependencies": {
