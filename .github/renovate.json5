@@ -65,7 +65,23 @@
     {
       packageNames: ["eslint-config-airbnb", "eslint-config-prettier"],
       groupName: "eslint configs",
-      automerge: false,
+      semanticCommitType: "feat",
+      updateTypes: ["minor", "patch"],
+      automerge: true,
+    },
+    {
+      packageNames: ["eslint-config-airbnb", "eslint-config-prettier"],
+      groupName: "eslint configs",
+      semanticCommitType: "feat",
+      updateTypes: ["major"],
+      commitBody: "BREAKING CHANGE: major update to extended configs",
+      automerge: true,
+    },
+    {
+      packageNames: ["eslint-config-airbnb", "eslint-config-prettier"],
+      groupName: "eslint configs",
+      updateTypes: ["pin", "digest", "lockFileMaintenance", "rollback", "bump"],
+      automerge: true,
     },
     {
       depTypeList: ["dependencies"],
