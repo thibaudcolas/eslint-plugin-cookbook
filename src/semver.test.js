@@ -34,9 +34,9 @@ Object {
       }, {});
     expect(devDependencies).toMatchInlineSnapshot(`
 Object {
-  "eslint": "^5.6.0",
-  "eslint-config-airbnb": "^17.1.0",
-  "eslint-config-prettier": "^3.0.1",
+  "eslint": "5.6.0",
+  "eslint-config-airbnb": "17.1.0",
+  "eslint-config-prettier": "3.0.1",
 }
 `);
   });
