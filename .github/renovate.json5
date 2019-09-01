@@ -3,7 +3,14 @@
   // https://renovatebot.com/docs/configuration-options/#commitbodytable
   commitBodyTable: true,
   // https://renovatebot.com/docs/configuration-options/#ignoredeps
-  ignoreDeps: [],
+  ignoreDeps: [
+    "eslint",
+    "eslint-config-airbnb",
+    "eslint-config-prettier",
+    "eslint-plugin-import",
+    "eslint-plugin-jsx-a11y",
+    "eslint-plugin-react",
+  ],
   // https://renovatebot.com/docs/configuration-options/#labels
   labels: ["enhancement"],
   // https://renovatebot.com/docs/configuration-options/#prcreation
@@ -61,37 +68,6 @@
       packagePatterns: ["^semantic-release", "^@semantic-release"],
       groupName: "semantic-release",
       automerge: true,
-    },
-    {
-      packageNames: ["eslint-config-airbnb", "eslint-config-prettier"],
-      groupName: "eslint configs",
-      semanticCommitType: "feat",
-      updateTypes: ["minor", "patch"],
-      automerge: true,
-    },
-    {
-      packageNames: ["eslint-config-airbnb", "eslint-config-prettier"],
-      groupName: "eslint configs",
-      semanticCommitType: "feat",
-      updateTypes: ["major"],
-      commitBody: "BREAKING CHANGE: major update to extended configs",
-      automerge: true,
-    },
-    {
-      packageNames: ["eslint-config-airbnb", "eslint-config-prettier"],
-      groupName: "eslint configs",
-      updateTypes: ["pin", "digest", "lockFileMaintenance", "rollback", "bump"],
-      automerge: true,
-    },
-    {
-      depTypeList: ["dependencies"],
-      semanticCommitType: "feat",
-      automerge: false,
-    },
-    {
-      depTypeList: ["peerDependencies"],
-      semanticCommitType: "feat",
-      automerge: false,
     },
   ],
 }
