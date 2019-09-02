@@ -44,12 +44,6 @@ Object {
         "optionalDependencies": false,
       },
     ],
-    "jsx-a11y/label-has-associated-control": Array [
-      0,
-    ],
-    "jsx-a11y/label-has-for": Array [
-      0,
-    ],
     "no-param-reassign": Array [
       2,
       Object {

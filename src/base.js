@@ -43,10 +43,6 @@ const REACT = {
 };
 
 const LEGACY = {
-  // Does not work at the moment for nested fields.
-  // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
-  "jsx-a11y/label-has-for": [0],
-  "jsx-a11y/label-has-associated-control": [0],
   // Do not enforce reassignment to properties of object parameters.
   "no-param-reassign": [2, { props: false }],
   // Only forbid "any" proptype, no other.
