@@ -74,6 +74,13 @@ To get the most out of this config, it is assumed that projects have the followi
 
 ## Rules
 
+### Extends
+
+- [`airbnb`](https://www.npmjs.com/package/eslint-config-airbnb)
+- [`prettier`](https://github.com/prettier/eslint-config-prettier)
+- [`prettier/react`](https://github.com/prettier/eslint-config-prettier)
+- [`prettier/flowtype`](https://github.com/prettier/eslint-config-prettier)
+
 ### Cookbook config
 
 - [no-warning-comments](https://eslint.org/docs/rules/no-warning-comments): `1, terms: todo, fixme, xxx, location: start`
@@ -82,7 +89,7 @@ To get the most out of this config, it is assumed that projects have the followi
 - [no-param-reassign](https://eslint.org/docs/rules/no-param-reassign): `2, props: false`
 - [react/forbid-prop-types](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md): `2, forbid: any`
 
-### Rules of [`eslint-config-airbnb`](https://github.com/airbnb/javascript)
+### Rules of [`airbnb`](https://github.com/airbnb/javascript)
 
 <details>
 

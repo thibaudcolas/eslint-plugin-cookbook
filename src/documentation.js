@@ -98,11 +98,18 @@ const disabled = Object.keys(rules)
 const rulesDocumentation = `
 ## Rules
 
+### Extends
+
+- [\`airbnb\`](https://www.npmjs.com/package/eslint-config-airbnb)
+- [\`prettier\`](https://github.com/prettier/eslint-config-prettier)
+- [\`prettier/react\`](https://github.com/prettier/eslint-config-prettier)
+- [\`prettier/flowtype\`](https://github.com/prettier/eslint-config-prettier)
+
 ### Cookbook config
 
 ${generateList(formatRows(customConventions))}
 
-### Rules of [\`eslint-config-airbnb\`](https://github.com/airbnb/javascript)
+### Rules of [\`airbnb\`](https://github.com/airbnb/javascript)
 
 <details>
 
