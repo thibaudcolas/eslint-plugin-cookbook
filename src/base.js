@@ -68,4 +68,10 @@ module.exports = {
     node: true,
     commonjs: true,
   },
+
+  settings: {
+    react: {
+      version: "latest",
+    },
+  },
 };

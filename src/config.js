@@ -18,6 +18,8 @@ const getComputedConfig = (baseConfig) => {
   // Remove option that does not serialise well to JSON.
   config.rules["import/no-cycle"] = config.rules["import/no-cycle"][0];
 
+  config.settings.react.version = "latest";
+
   return config;
 };
 
