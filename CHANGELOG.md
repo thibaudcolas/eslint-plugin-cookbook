@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html), enforced with [semantic-release](https://github.com/semantic-release/semantic-release).
 
+## [5.0.1](https://github.com/thibaudcolas/eslint-plugin-cookbook/compare/v5.0.0...v5.0.1) (2019-09-02)
+
+### Bug Fixes
+
+- **readme:** document which configs this package extends from ([e10c09c](https://github.com/thibaudcolas/eslint-plugin-cookbook/commit/e10c09c))
+- **readme:** re-add missing tips section in README ([1b9dfce](https://github.com/thibaudcolas/eslint-plugin-cookbook/commit/1b9dfce))
+
 # [5.0.0](https://github.com/thibaudcolas/eslint-plugin-cookbook/compare/v4.0.1...v5.0.0) (2019-09-02)
 
 ### Features
