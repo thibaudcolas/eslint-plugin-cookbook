@@ -87,5 +87,10 @@ Object {
       0,
     ],
   },
+  "settings": Object {
+    "react": Object {
+      "version": "latest",
+    },
+  },
 }
 `;
