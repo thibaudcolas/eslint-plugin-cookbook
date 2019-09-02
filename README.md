@@ -59,6 +59,10 @@ module.exports = {
 };
 ```
 
+### Tips
+
+- Use ESLint’s [`--report-unused-disable-directives`](https://eslint.org/docs/user-guide/command-line-interface#--report-unused-disable-directives) flag to ensure you do not use more `eslint-disable` comments than needed.
+
 ### Related tools
 
 To get the most out of this config, it is assumed that projects have the following tools set up:
