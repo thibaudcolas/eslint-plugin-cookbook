@@ -354,7 +354,7 @@ Object {
       "error",
     ],
     "@thibaudcolas/cookbook/jsx-a11y/label-has-associated-control": Array [
-      0,
+      "error",
       Object {
         "assert": "both",
         "controlComponents": Array [],
@@ -364,7 +364,7 @@ Object {
       },
     ],
     "@thibaudcolas/cookbook/jsx-a11y/label-has-for": Array [
-      0,
+      "off",
       Object {
         "allowChildren": false,
         "components": Array [],
