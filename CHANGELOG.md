@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html), enforced with [semantic-release](https://github.com/semantic-release/semantic-release).
 
+# [5.0.0](https://github.com/thibaudcolas/eslint-plugin-cookbook/compare/v4.0.1...v5.0.0) (2019-09-02)
+
+### Features
+
+- **config:** reenable jsx-a11y label rules ([7fcf0e3](https://github.com/thibaudcolas/eslint-plugin-cookbook/commit/7fcf0e3))
+- **config:** update all config dependencies, with major updates ([96f2214](https://github.com/thibaudcolas/eslint-plugin-cookbook/commit/96f2214))
+
+### BREAKING CHANGES
+
+- **config:** we’ve re-enabled label-related rules from jsx-a11y. They seem to be more reliable than they have been in the past.
+- **config:** this updates all configs/plugins this package is based on, as well as supporting ESLint 6. Please refer to the table below:
+
+| package                   | from    | to                |
+| ------------------------- | ------- | ----------------- |
+| eslint                    | ^5.6.0  | ^5.6.0 and ^6.0.0 |
+| eslint-config-airbnb      | 17.1.0  | 18.0.1            |
+| eslint-config-prettier    | 3.0.1   | 6.1.0             |
+| eslint-plugin-import      | ^2.14.0 | ^2.18.2"          |
+| eslint-plugin-jsx-a11y    | ^6.1.1  | ^6.2.3"           |
+| eslint-plugin-react       | ^7.11.1 | ^7.14.3"          |
+| eslint-plugin-react-hooks | N/A     | ^1.7.0            |
+
+Additionally, eslint-plugin-react-hooks has been added to enforce the [rules of hooks](https://reactjs.org/docs/hooks-rules.html).
+
 ## [4.0.1](https://github.com/thibaudcolas/eslint-plugin-cookbook/compare/v4.0.0...v4.0.1) (2018-09-22)
 
 ### Bug Fixes
