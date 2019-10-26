@@ -27,9 +27,9 @@
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
     "@commitlint/travis-cli": "8.2.0",
-    "@semantic-release/changelog": "3.0.4",
-    "@semantic-release/exec": "3.3.7",
-    "@semantic-release/git": "7.0.16",
+    "@semantic-release/changelog": "3.0.5",
+    "@semantic-release/exec": "3.3.8",
+    "@semantic-release/git": "7.0.17",
     "danger": "9.2.2",
     "eslint": "6.3.0",
     "eslint-config-airbnb": "18.0.1",
@@ -37,7 +37,7 @@
     "eslint-rule-documentation": "1.0.23",
     "jest": "24.9.0",
     "prettier": "1.18.2",
-    "semantic-release": "15.13.27"
+    "semantic-release": "15.13.28"
   },
   "dependencies": {
     "eslint-plugin-import": "^2.18.2",
