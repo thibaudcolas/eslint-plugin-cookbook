@@ -30,7 +30,7 @@
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/exec": "3.3.8",
     "@semantic-release/git": "7.0.18",
-    "danger": "9.2.9",
+    "danger": "9.2.10",
     "eslint": "6.3.0",
     "eslint-config-airbnb": "18.0.1",
     "eslint-config-prettier": "6.1.0",
