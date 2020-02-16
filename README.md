@@ -42,6 +42,10 @@ Then, to configure Prettier itself, create a `prettier.config.js` file in the ro
 module.exports = require("@thibaudcolas/eslint-plugin-cookbook/prettier.config");
 ```
 
+### Switching to this config
+
+Read on: [Upgrading to a stricter ESLint config](https://thib.me/upgrading-to-stricter-eslint-config).
+
 ### Overriding the rules
 
 Should further customisation be required, rules coming from external plugins require the `@thibaudcolas/cookbook` prefix:
