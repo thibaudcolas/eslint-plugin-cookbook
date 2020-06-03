@@ -11,6 +11,7 @@ Object {
   },
   "extends": Array [],
   "globals": Object {},
+  "ignorePatterns": Array [],
   "parser": null,
   "parserOptions": Object {
     "ecmaFeatures": Object {
@@ -218,6 +219,9 @@ Object {
     ],
     "@thibaudcolas/cookbook/import/no-useless-path-segments": Array [
       "error",
+      Object {
+        "commonjs": true,
+      },
     ],
     "@thibaudcolas/cookbook/import/no-webpack-loader-syntax": Array [
       "error",
@@ -573,6 +577,13 @@ Object {
         ],
       },
     ],
+    "@thibaudcolas/cookbook/react/function-component-definition": Array [
+      "off",
+      Object {
+        "namedComponents": "function-expression",
+        "unnamedComponents": "function-expression",
+      },
+    ],
     "@thibaudcolas/cookbook/react/jsx-boolean-value": Array [
       "error",
       "never",
@@ -684,6 +695,17 @@ Object {
         "noStrings": true,
       },
     ],
+    "@thibaudcolas/cookbook/react/jsx-no-script-url": Array [
+      "off",
+      Array [
+        Object {
+          "name": "Link",
+          "props": Array [
+            "to",
+          ],
+        },
+      ],
+    ],
     "@thibaudcolas/cookbook/react/jsx-no-target-blank": Array [
       "error",
       Object {
@@ -692,6 +714,9 @@ Object {
     ],
     "@thibaudcolas/cookbook/react/jsx-no-undef": Array [
       "error",
+    ],
+    "@thibaudcolas/cookbook/react/jsx-no-useless-fragment": Array [
+      "off",
     ],
     "@thibaudcolas/cookbook/react/jsx-one-expression-per-line": Array [
       "off",
@@ -770,6 +795,9 @@ Object {
     ],
     "@thibaudcolas/cookbook/react/no-access-state-in-setstate": Array [
       "error",
+    ],
+    "@thibaudcolas/cookbook/react/no-adjacent-inline-elements": Array [
+      "off",
     ],
     "@thibaudcolas/cookbook/react/no-array-index-key": Array [
       "error",
@@ -916,7 +944,6 @@ Object {
             "componentDidUpdate",
             "componentDidCatch",
             "componentWillUnmount",
-            "componentDidCatch",
           ],
           "rendering": Array [
             "/^render.+$/",
@@ -924,6 +951,7 @@ Object {
           ],
         },
         "order": Array [
+          "static-variables",
           "static-methods",
           "instance-variables",
           "lifecycle",
@@ -975,6 +1003,7 @@ Object {
       "error",
       Object {
         "allowImplicit": true,
+        "checkForEach": false,
       },
     ],
     "array-element-newline": Array [
@@ -1023,6 +1052,7 @@ Object {
       "error",
       Object {
         "ignoreDestructuring": false,
+        "ignoreImports": false,
         "properties": "never",
       },
     ],
@@ -1128,6 +1158,9 @@ Object {
         "commentPattern": "^no default$",
       },
     ],
+    "default-param-last": Array [
+      "off",
+    ],
     "dot-location": Array [
       "off",
       "property",
@@ -1174,6 +1207,7 @@ Object {
     ],
     "function-call-argument-newline": Array [
       "off",
+      "consistent",
     ],
     "function-paren-newline": Array [
       "off",
@@ -1197,6 +1231,9 @@ Object {
     ],
     "global-require": Array [
       "error",
+    ],
+    "grouped-accessor-pairs": Array [
+      "off",
     ],
     "guard-for-in": Array [
       "error",
@@ -1250,10 +1287,14 @@ Object {
           "JSXExpressionContainer",
           "JSXOpeningElement",
           "JSXClosingElement",
+          "JSXFragment",
+          "JSXOpeningFragment",
+          "JSXClosingFragment",
           "JSXText",
           "JSXEmptyExpression",
           "JSXSpreadChild",
         ],
+        "offsetTernaryExpressions": false,
         "outerIIFEBody": 1,
       },
     ],
@@ -1282,15 +1323,12 @@ Object {
         "overrides": Object {
           "case": Object {
             "after": true,
-            "before": true,
           },
           "return": Object {
             "after": true,
-            "before": true,
           },
           "throw": Object {
             "after": true,
-            "before": true,
           },
         },
       },
@@ -1473,6 +1511,9 @@ Object {
     "no-constant-condition": Array [
       "warn",
     ],
+    "no-constructor-return": Array [
+      "off",
+    ],
     "no-continue": Array [
       "error",
     ],
@@ -1493,6 +1534,9 @@ Object {
     ],
     "no-dupe-class-members": Array [
       "error",
+    ],
+    "no-dupe-else-if": Array [
+      "off",
     ],
     "no-dupe-keys": Array [
       "error",
@@ -1592,6 +1636,9 @@ Object {
     ],
     "no-implied-eval": Array [
       "error",
+    ],
+    "no-import-assign": Array [
+      "off",
     ],
     "no-inline-comments": Array [
       "off",
@@ -1955,6 +2002,9 @@ Object {
     "no-sequences": Array [
       "error",
     ],
+    "no-setter-return": Array [
+      "off",
+    ],
     "no-shadow": Array [
       "error",
     ],
@@ -2012,6 +2062,7 @@ Object {
         ],
         "allowAfterSuper": false,
         "allowAfterThis": false,
+        "allowAfterThisConstructor": false,
         "enforceInMethodNames": true,
       },
     ],
@@ -2234,6 +2285,9 @@ Object {
         "enforceForRenamedProperties": false,
       },
     ],
+    "prefer-exponentiation-operator": Array [
+      "off",
+    ],
     "prefer-named-capture-group": Array [
       "off",
     ],
@@ -2250,6 +2304,9 @@ Object {
       },
     ],
     "prefer-reflect": Array [
+      "off",
+    ],
+    "prefer-regex-literals": Array [
       "off",
     ],
     "prefer-rest-params": Array [

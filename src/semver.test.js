@@ -5,10 +5,10 @@ describe("semver - should those tests break, consider releasing a new major vers
   it("dependencies", () => {
     expect(pkg.dependencies).toMatchInlineSnapshot(`
       Object {
-        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-import": "^2.20.2",
         "eslint-plugin-jsx-a11y": "^6.2.3",
-        "eslint-plugin-react": "^7.14.3",
-        "eslint-plugin-react-hooks": "^1.7.0",
+        "eslint-plugin-react": "^7.20.0",
+        "eslint-plugin-react-hooks": "^4.0.4",
       }
     `);
   });
@@ -35,9 +35,9 @@ describe("semver - should those tests break, consider releasing a new major vers
       }, {});
     expect(devDependencies).toMatchInlineSnapshot(`
       Object {
-        "eslint": "6.3.0",
-        "eslint-config-airbnb": "18.0.1",
-        "eslint-config-prettier": "6.1.0",
+        "eslint": "7.1.0",
+        "eslint-config-airbnb": "18.1.0",
+        "eslint-config-prettier": "6.11.0",
       }
     `);
   });
