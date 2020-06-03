@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html), enforced with [semantic-release](https://github.com/semantic-release/semantic-release).
 
+# [6.0.0](https://github.com/thibaudcolas/eslint-plugin-cookbook/compare/v5.0.1...v6.0.0) (2020-06-03)
+
+### Features
+
+- **config:** update all config dependencies, with major updates ([6c893b9](https://github.com/thibaudcolas/eslint-plugin-cookbook/commit/6c893b9fe8bcdd67b262c70cb165a9254b891866))
+- **deps:** open ESLint peerDependency range to any version above 5.6.0 ([a5239e7](https://github.com/thibaudcolas/eslint-plugin-cookbook/commit/a5239e7314fa6c87be92d2c1e80b3148e94bf5e8))
+
+### BREAKING CHANGES
+
+- **config:** this updates all configs/plugins this package is based on, as well as supporting ESLint 7. Please refer to the table below:
+
+| package                   | from              | to      |
+| ------------------------- | ----------------- | ------- |
+| eslint                    | ^5.6.0 and ^6.0.0 | >=5.6.0 |
+| eslint-config-airbnb      | 18.0.1            | 18.1.0  |
+| eslint-config-prettier    | 6.1.0             | 6.11.0  |
+| eslint-plugin-import      | ^2.18.2           | ^2.20.2 |
+| eslint-plugin-jsx-a11y    | ^6.2.3            | ^6.2.3  |
+| eslint-plugin-react       | ^7.14.3           | ^7.20.0 |
+| eslint-plugin-react-hooks | ^1.7.0            | ^4.0.4  |
+
 ## [5.0.1](https://github.com/thibaudcolas/eslint-plugin-cookbook/compare/v5.0.0...v5.0.1) (2019-09-02)
 
 ### Bug Fixes

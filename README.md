@@ -151,7 +151,7 @@ To get the most out of this config, it is assumed that projects have the followi
 - [react/react-in-jsx-scope](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md)
 - [react/require-render-return](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md)
 - [react/self-closing-comp](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md)
-- [react/sort-comp](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md): `error, order: static-methods, instance-variables, lifecycle,…`
+- [react/sort-comp](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md): `error, order: static-variables, static-methods, instance-var…`
 - [react/jsx-no-target-blank](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md): `error, enforceDynamicLinks: always`
 - [react/jsx-no-comment-textnodes](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md)
 - [react/no-render-return-value](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md)
@@ -198,7 +198,7 @@ To get the most out of this config, it is assumed that projects have the followi
 - [import/no-named-default](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md)
 - [import/no-self-import](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md)
 - [import/no-cycle](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md)
-- [import/no-useless-path-segments](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md)
+- [import/no-useless-path-segments](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md): `error, commonjs: true`
 - [constructor-super](https://eslint.org/docs/rules/constructor-super)
 - [no-class-assign](https://eslint.org/docs/rules/no-class-assign)
 - [no-const-assign](https://eslint.org/docs/rules/no-const-assign)
@@ -227,7 +227,7 @@ To get the most out of this config, it is assumed that projects have the followi
 - [no-undef-init](https://eslint.org/docs/rules/no-undef-init)
 - [no-unused-vars](https://eslint.org/docs/rules/no-unused-vars): `error, vars: all, args: after-used, ignoreRestSiblings: true`
 - [no-use-before-define](https://eslint.org/docs/rules/no-use-before-define): `error, functions: true, classes: true, variables: true`
-- [camelcase](https://eslint.org/docs/rules/camelcase): `error, properties: never, ignoreDestructuring: false`
+- [camelcase](https://eslint.org/docs/rules/camelcase): `error, properties: never, ignoreDestructuring: false, ignore…`
 - [func-names](https://eslint.org/docs/rules/func-names): `warn`
 - [lines-between-class-members](https://eslint.org/docs/rules/lines-between-class-members): `error, always, exceptAfterSingleLine: false`
 - [lines-around-directive](https://eslint.org/docs/rules/lines-around-directive): `error, before: always, after: always`
@@ -282,7 +282,7 @@ To get the most out of this config, it is assumed that projects have the followi
 - [no-unsafe-negation](https://eslint.org/docs/rules/no-unsafe-negation)
 - [use-isnan](https://eslint.org/docs/rules/use-isnan)
 - [valid-typeof](https://eslint.org/docs/rules/valid-typeof): `error, requireStringLiterals: true`
-- [array-callback-return](https://eslint.org/docs/rules/array-callback-return): `error, allowImplicit: true`
+- [array-callback-return](https://eslint.org/docs/rules/array-callback-return): `error, allowImplicit: true, checkForEach: false`
 - [block-scoped-var](https://eslint.org/docs/rules/block-scoped-var)
 - [consistent-return](https://eslint.org/docs/rules/consistent-return)
 - [default-case](https://eslint.org/docs/rules/default-case): `error, commentPattern: ^no default$`
@@ -355,9 +355,9 @@ To get the most out of this config, it is assumed that projects have the followi
 - [react/jsx-max-props-per-line](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md)
 - [react/jsx-one-expression-per-line](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-one-expression-per-line.md)
 - [react/jsx-props-no-multi-spaces](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-multi-spaces.md)
-- [react/jsx-space-before-closing](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md)
 - [react/jsx-tag-spacing](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md)
 - [react/jsx-wrap-multilines](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md)
+- [react/jsx-space-before-closing](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md)
 - [flowtype/boolean-style](https://github.com/gajus/eslint-plugin-flowtype#boolean-style)
 - [flowtype/delimiter-dangle](https://github.com/gajus/eslint-plugin-flowtype#delimiter-dangle)
 - [flowtype/generic-spacing](https://github.com/gajus/eslint-plugin-flowtype#generic-spacing)
@@ -397,7 +397,6 @@ To get the most out of this config, it is assumed that projects have the followi
 - [generator-star-spacing](https://eslint.org/docs/rules/generator-star-spacing)
 - [implicit-arrow-linebreak](https://eslint.org/docs/rules/implicit-arrow-linebreak)
 - [indent](https://eslint.org/docs/rules/indent)
-- [indent-legacy](https://eslint.org/docs/rules/indent-legacy)
 - [jsx-quotes](https://eslint.org/docs/rules/jsx-quotes)
 - [key-spacing](https://eslint.org/docs/rules/key-spacing)
 - [keyword-spacing](https://eslint.org/docs/rules/keyword-spacing)
@@ -415,7 +414,6 @@ To get the most out of this config, it is assumed that projects have the followi
 - [no-multiple-empty-lines](https://eslint.org/docs/rules/no-multiple-empty-lines)
 - [no-reserved-keys](https://eslint.org/docs/rules/no-reserved-keys)
 - [no-space-before-semi](https://eslint.org/docs/rules/no-space-before-semi)
-- [no-spaced-func](https://eslint.org/docs/rules/no-spaced-func)
 - [no-trailing-spaces](https://eslint.org/docs/rules/no-trailing-spaces)
 - [no-whitespace-before-property](https://eslint.org/docs/rules/no-whitespace-before-property)
 - [no-wrap-func](https://eslint.org/docs/rules/no-wrap-func)
@@ -450,6 +448,8 @@ To get the most out of this config, it is assumed that projects have the followi
 - [wrap-iife](https://eslint.org/docs/rules/wrap-iife)
 - [wrap-regex](https://eslint.org/docs/rules/wrap-regex)
 - [yield-star-spacing](https://eslint.org/docs/rules/yield-star-spacing)
+- [indent-legacy](https://eslint.org/docs/rules/indent-legacy)
+- [no-spaced-func](https://eslint.org/docs/rules/no-spaced-func)
 - [jsx-a11y/label-has-for](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md)
 - [jsx-a11y/no-onchange](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-onchange.md)
 - [react/display-name](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md)
@@ -472,6 +472,10 @@ To get the most out of this config, it is assumed that projects have the followi
 - [react/jsx-max-depth](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-depth.md)
 - [react/no-unsafe](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unsafe.md)
 - [react/prefer-read-only-props](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md)
+- [react/jsx-no-script-url](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-script-url.md)
+- [react/jsx-no-useless-fragment](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-useless-fragment.md)
+- [react/no-adjacent-inline-elements](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-adjacent-inline-elements.md)
+- [react/function-component-definition](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md)
 - [import/default](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/default.md)
 - [import/namespace](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/namespace.md)
 - [import/no-deprecated](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-deprecated.md)
@@ -521,6 +525,7 @@ To get the most out of this config, it is assumed that projects have the followi
 - [no-negated-condition](https://eslint.org/docs/rules/no-negated-condition)
 - [no-ternary](https://eslint.org/docs/rules/no-ternary)
 - [padding-line-between-statements](https://eslint.org/docs/rules/padding-line-between-statements)
+- [prefer-exponentiation-operator](https://eslint.org/docs/rules/prefer-exponentiation-operator)
 - [require-jsdoc](https://eslint.org/docs/rules/require-jsdoc)
 - [sort-keys](https://eslint.org/docs/rules/sort-keys)
 - [sort-vars](https://eslint.org/docs/rules/sort-vars)
@@ -531,11 +536,17 @@ To get the most out of this config, it is assumed that projects have the followi
 - [no-process-exit](https://eslint.org/docs/rules/no-process-exit)
 - [no-restricted-modules](https://eslint.org/docs/rules/no-restricted-modules)
 - [no-sync](https://eslint.org/docs/rules/no-sync)
+- [no-dupe-else-if](https://eslint.org/docs/rules/no-dupe-else-if)
+- [no-import-assign](https://eslint.org/docs/rules/no-import-assign)
+- [no-setter-return](https://eslint.org/docs/rules/no-setter-return)
 - [no-negated-in-lhs](https://eslint.org/docs/rules/no-negated-in-lhs)
 - [require-atomic-updates](https://eslint.org/docs/rules/require-atomic-updates)
 - [valid-jsdoc](https://eslint.org/docs/rules/valid-jsdoc)
 - [accessor-pairs](https://eslint.org/docs/rules/accessor-pairs)
 - [complexity](https://eslint.org/docs/rules/complexity)
+- [default-param-last](https://eslint.org/docs/rules/default-param-last)
+- [grouped-accessor-pairs](https://eslint.org/docs/rules/grouped-accessor-pairs)
+- [no-constructor-return](https://eslint.org/docs/rules/no-constructor-return)
 - [no-div-regex](https://eslint.org/docs/rules/no-div-regex)
 - [no-eq-null](https://eslint.org/docs/rules/no-eq-null)
 - [no-native-reassign](https://eslint.org/docs/rules/no-native-reassign)
@@ -546,6 +557,7 @@ To get the most out of this config, it is assumed that projects have the followi
 - [no-unmodified-loop-condition](https://eslint.org/docs/rules/no-unmodified-loop-condition)
 - [no-useless-call](https://eslint.org/docs/rules/no-useless-call)
 - [prefer-named-capture-group](https://eslint.org/docs/rules/prefer-named-capture-group)
+- [prefer-regex-literals](https://eslint.org/docs/rules/prefer-regex-literals)
 - [require-await](https://eslint.org/docs/rules/require-await)
 - [require-unicode-regexp](https://eslint.org/docs/rules/require-unicode-regexp)
 
