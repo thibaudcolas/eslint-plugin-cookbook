@@ -16,7 +16,7 @@ describe("semver - should those tests break, consider releasing a new major vers
   it("peerDependencies", () => {
     expect(pkg.peerDependencies).toMatchInlineSnapshot(`
       Object {
-        "eslint": "^5.6.0 || ^6.0.0",
+        "eslint": ">=5.6.0",
       }
     `);
   });
