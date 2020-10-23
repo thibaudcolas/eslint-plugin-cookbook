@@ -1,6 +1,6 @@
 # @thibaudcolas/eslint-plugin-cookbook [<img src="https://raw.githubusercontent.com/thibaudcolas/eslint-plugin-cookbook/master/.github/eslint-logo.svg?sanitize=true" alt="ESLint" width="90" height="90" align="right">](https://eslint.org)
 
-[![npm](https://img.shields.io/npm/v/@thibaudcolas/eslint-plugin-cookbook.svg)](https://www.npmjs.com/package/@thibaudcolas/eslint-plugin-cookbook) [![Build Status](https://travis-ci.com/thibaudcolas/eslint-plugin-cookbook.svg?branch=master)](https://travis-ci.com/thibaudcolas/eslint-plugin-cookbook)
+[![npm](https://img.shields.io/npm/v/@thibaudcolas/eslint-plugin-cookbook.svg)](https://www.npmjs.com/package/@thibaudcolas/eslint-plugin-cookbook) [![Build Status](https://travis-ci.com/thibaudcolas/eslint-plugin-cookbook.svg?branch=main)](https://travis-ci.com/thibaudcolas/eslint-plugin-cookbook)
 
 > Shareable ESLint config, based on airbnb/javascript, bundled as a plugin.
 
