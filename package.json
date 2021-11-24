@@ -36,7 +36,7 @@
     "eslint-rule-documentation": "1.0.23",
     "jest": "27.3.1",
     "prettier": "2.2.1",
-    "semantic-release": "18.0.0"
+    "semantic-release": "18.0.1"
   },
   "dependencies": {
     "eslint-plugin-import": "^2.20.2",
